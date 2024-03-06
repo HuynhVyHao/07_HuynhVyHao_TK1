@@ -30,8 +30,8 @@ public class StudentController {
         return dao.findAll();
     }
 
-    @GetMapping("findOrderById/{id}")
-    public Student findOrder(@PathVariable int id) {
+    @GetMapping("findStudentById/{id}")
+    public Student findStudentById(@PathVariable int id) {
         return dao.findStudentById(id);
     }
     @DeleteMapping("delete/{id}")
